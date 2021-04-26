@@ -1,25 +1,12 @@
-local custom_ayu_dark = require'lualine.themes.ayu_dark'
 local Worktree = require("git-worktree")
 
 local git_branch = ""
 
 local colors = {
-  bg       = '#202328',
-  fg       = '#bbc2cf',
   yellow   = '#ECBE7B',
   cyan     = '#008080',
-  darkblue = '#081633',
-  green    = '#98be65',
-  orange   = '#FF8800',
-  violet   = '#a9a1e1',
-  magenta  = '#c678dd',
-  blue     = '#51afef';
   red      = '#ec5f67';
 }
-
--- Chnage the background of lualine_c section for normal mode
-custom_ayu_dark.normal.c.bg = '#111111' -- rgb colors are supported
-custom_ayu_dark.normal.c.gui = 'bold' -- rgb colors are supported
 
 local function harpoon_status()
     local status = require("harpoon.mark").status()
@@ -52,7 +39,7 @@ end)
 
 require('lualine').setup{
     options = {
-        theme = custom_ayu_dark,
+        theme = 'gruvbox',
         section_separators = {'', ''},
         component_separators = {'', ''},
         icons_enabled = true,
