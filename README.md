@@ -21,6 +21,6 @@ I've just copy-pasted the function made by ThePrimagen himself during is streami
 
 Follow lualine repo to further customize lualine.
 
-**Git branch** use the worktree plugin instead of the standard branch component. On the left the hanpoon mark if exist and the lsp diagnostic
+**Git branch** use the git-worktree plugin instead of the standard branch component of lualine. On the right the hanpoon mark and the lsp diagnostic
 
 ![img](image.png)
